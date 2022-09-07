@@ -1,17 +1,9 @@
 package problems
 
 func Fibonacci(n int) int {
-	var (
-		first  = 0
-		second = 1
-		result = 0
-	)
-
-	for i := 0; i < n; i++ {
-		result = first + second
-		first = second
-		second = result
+	if n <= 2 && n >= 0 {
+		return n
 	}
 
-	return result
+	return Fibonacci(n-1) + Fibonacci(n-2)
 }

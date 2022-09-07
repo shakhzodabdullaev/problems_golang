@@ -7,5 +7,5 @@ import (
 )
 
 func main() {
-	fmt.Println(problems.Fibonacci(14))
+	fmt.Println(problems.Fibonacci(1))
 }
